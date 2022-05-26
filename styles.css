@@ -1,0 +1,127 @@
+/* Mobile First */
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+#wrapper {
+  display: grid;
+  grid-gap: 16px;
+  height: 90vh;
+  grid-template-columns: 90vw;
+  grid-template-rows: 10vh 10vh 65vh 10vh;
+  grid-template-areas:
+    "header"
+    "side-menu"
+    "content"
+    "footer";
+}
+#header {
+  background-color: burlywood;
+  color: #fff;
+  font-weight: bold;
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#side-menu {
+  grid-area: side-menu;
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+}
+#side-menu h3 {
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  color: burlywood;
+  margin: 0;
+  height: 32px;
+}
+#side-menu ul {
+  list-style-type: none;
+  align-items: center;
+}
+#side-menu ul li {
+  padding: 4px;
+  text-align: left;
+}
+#side-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+#content {
+  grid-area: content;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#nestedGrid {
+  display: grid;
+  grid-gap: 4px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+.photoBox {
+  width: 350px;
+  height: 150px;
+  /* background-color: darkred; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#one {
+  background-image: url(images/html.png);
+}
+#two {
+  background-image: url(images/css.png);
+}
+#three {
+  background-image: url(images/js.png);
+}
+#four {
+  background-image: url(images/react-js.png);
+}
+#footer {
+  grid-area: footer;
+  background-color: burlywood;
+  color: #fff;
+  font-weight: bold;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width: 900px) {
+  #wrapper {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 20vw 1fr;
+    grid-template-rows: 1fr 75vh 1fr;
+    grid-template-areas:
+      "header header"
+      "side-menu content"
+      "footer footer";
+  }
+}
+
+/* Large Screens */
+@media (min-width: 901px) {
+  body {
+    font-size: 24px;
+  }
+  #wrapper {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 20vw 1fr;
+    grid-template-rows: 1fr 75vh 1fr;
+    grid-template-areas:
+      "header header"
+      "side-menu content"
+      "footer footer";
+  }
+}
