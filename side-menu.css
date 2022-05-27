@@ -1,0 +1,27 @@
+#side-menu {
+  grid-area: side-menu;
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+}
+#side-menu h3 {
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  color: burlywood;
+  margin: 0;
+  height: 32px;
+}
+#side-menu ul {
+  list-style-type: none;
+  align-items: center;
+}
+#side-menu ul li {
+  padding: 4px;
+  text-align: left;
+}
+#side-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}

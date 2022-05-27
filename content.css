@@ -1,0 +1,10 @@
+@import "skills/skills.css";
+
+#content {
+  grid-area: content;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
