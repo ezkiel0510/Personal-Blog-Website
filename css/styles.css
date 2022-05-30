@@ -12,7 +12,7 @@ body {
   grid-gap: 16px;
   height: 90vh;
   grid-template-columns: 90vw;
-  grid-template-rows: 10vh 10vh 65vh 10vh;
+  grid-template-rows: 10vh 10vh 1fr 20vh;
   grid-template-areas:
     "header"
     "side-menu"

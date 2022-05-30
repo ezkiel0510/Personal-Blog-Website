@@ -1,4 +1,4 @@
-@import "skills/skills.css";
+@import "./skills.css";
 
 #content {
   grid-area: content;
